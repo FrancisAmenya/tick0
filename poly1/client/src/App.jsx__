@@ -1,0 +1,13 @@
+import React from 'react';
+
+const App = () => {
+  console.log("App component rendered");
+  return (
+    <div className="app">
+      <h1>William Ruto Trivia</h1>
+      <p>If you can see this, React is working!</p>
+    </div>
+  );
+};
+
+export default App;
