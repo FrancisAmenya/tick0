@@ -1,0 +1,46 @@
+PolyTick0/
+
+tick0
+├── .git ( git folder )
+├── .gitignore ( gitignore config )
+├──poly1
+│   ├── client
+│   │   └── ecosystem.config.js
+│   │   └── package.json
+│   │   ├── package-lock.json
+│   │   ├── public
+│   │   │   └── index.html
+│   │   ├── src
+│   │   │   ├── App.jsx
+│   │   │   ├── App.jsx__
+│   │   │   ├── components
+│   │   │   │   ├── About.jsx
+│   │   │   │   ├── cover.jpg
+│   │   │   │   ├── Game.jsx
+│   │   │   │   ├── LandingPage.css
+│   │   │   │   ├── LandingPage.jsx
+│   │   │   │   ├── Question.jsx
+│   │   │   │   └── Score.jsx
+│   │   │   ├── context
+│   │   │   │   ├── AuthContext.js
+│   │   │   ├── firebase
+│   │   │   │   ├── firebase.js  ( client firebase config )
+│   │   │   ├── index.css
+│   │   │   └── index.js
+│   │   └── webpack.config.js
+│   ├── project_structure.txt
+│   └── server
+│       ├── authMiddleware.js
+│       ├── firebase
+│       │   └── firebaseAdmin.js  ( server firebase config )
+│       ├── models
+│       │   └── Question.js
+│       ├── package.json
+│       ├── package-lock.json 
+│       ├── routes
+│       │   └── questions.js
+│       ├── seedDatabase.js
+│       └── server.js
+└── README.md
+
+7 directories, 22 files

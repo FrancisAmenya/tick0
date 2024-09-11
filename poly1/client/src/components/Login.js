@@ -4,6 +4,8 @@ import { signInWithEmailAndPassword } from 'firebase/auth';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import GoogleLogin from './GoogleLogin'; // Import GoogleLogin
+import '../styles.css';
+import './Button';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -16,7 +18,7 @@ const Login = () => {
       await signInWithEmailAndPassword(auth, email, password);
       const user = auth.currentUser;
       const token = await user.getIdToken();
-      
+
       // Example of making a protected request
       const response = await axios.get('/protected-route', {
         headers: { Authorization: token },
@@ -29,7 +31,7 @@ const Login = () => {
     }
   };
 
-  return (   
+  return (
     <div className="container">
       <header>
         <h1>Login</h1>
@@ -41,7 +43,8 @@ const Login = () => {
         <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} required />
         <button type="submit" className="button">Log In</button>
       </form>
-      <GoogleLogin /> {/* Include Google login button */}
+      <br/>
+      <GoogleLogin className="customButton"/> {/* Include Google login button */}
     </div>
       </main>
     </div>

@@ -3,7 +3,9 @@ import { auth } from '../firebase/firebase';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import GoogleLogin from './GoogleLogin'; // Import GoogleLogin
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
-import '../global.css';  // Add this line
+import '../styles.css';  // Add this line
+//import './LandingPage.css';
+import './Button';
 
 const Signup = () => {
   const [email, setEmail] = useState('');
@@ -24,11 +26,11 @@ const Signup = () => {
 
   return (
     <div className="container">
-      <header>
-        <h1>Sign Up</h1>
-      </header>
     <main>
     <div className="content">
+
+      <p>Sign Up</p>
+
       <form onSubmit={handleSignup}>
         <input
          type="email"
@@ -46,7 +48,9 @@ const Signup = () => {
            />
           <button type="submit" className="button">Sign Up</button>
           </form>
-          <GoogleLogin /> {/* Include Google login button */}
+          <br/>
+          <GoogleLogin className="customButton"/> {/* Include Google login button */}
+          <br/>
         </div>
       </main>
     </div>

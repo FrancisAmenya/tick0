@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './LandingPage.css'; // We'll create this CSS file next
+//import './LandingPage.css'; // We'll create this CSS file next
+import '../styles.css';
 import coverImage from './cover.jpg'; // Import the image
 
 const LandingPage = () => {

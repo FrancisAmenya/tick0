@@ -5,7 +5,8 @@ const About = () => {
   return (
   <div className="container">
     <header>
-      <h1>About William Ruto Trivia</h1><nav>
+      <h1>PolyTick0 Trivia</h1>
+         <nav>
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/game">Game</Link></li>
@@ -14,9 +15,9 @@ const About = () => {
     </header>
     <main>
     <div className="content">
-      <h1>About William Ruto Trivia</h1>
-      <p>William Ruto, the President of Kenya.</p>
-      <Link to="/">Back to Home</Link>
+      <h1>About PolyTick0 Trivia</h1>
+      <p>Civic Education on the Presidents of Africa.</p>
+      <Link to="/" className="custom-button">Back to Home</Link>
     </div>
       </main>
     </div>
