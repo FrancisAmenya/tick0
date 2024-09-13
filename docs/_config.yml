@@ -1,3 +1,24 @@
-#site-owners
-*	@FrancisAmenya
+# Site settings
+title: francisamenya.github.io
+email: amenyafrancis@gmail.com
+description: >-
+  This is the portfolio project landing page for francisamenya.
+baseurl: "/docs" # the subpath of your site, e.g. /blog
+url: "https://francisamenya.github.io" # the base hostname & protocol for your site
+twitter_username: uxpressed
+github_username:  francisamenya
 
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude items from the output
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
