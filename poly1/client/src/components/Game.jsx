@@ -2,23 +2,28 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Question from './Question.jsx';
 import Score from './Score.jsx';
+
 import { useAuth } from '../context/AuthContext';
 import { db } from '../firebase/firebase';
 import { doc, setDoc, collection, getDocs, getDoc } from "firebase/firestore";
+import { Link } from 'react-router-dom';
 
 const Game = () => {
     const { user } = useAuth();
     const [questions, setQuestions] = useState([]);
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
+
     const [gameOver, setGameOver] = useState(false);
     const [highScore, setHighScore] = useState(0);
     const [leaderboardPosition, setLeaderboardPosition] = useState(null);
     const [loading, setLoading] = useState(false);
+
     const [timeRemaining, setTimeRemaining] = useState(0);
     const [gameMode, setGameMode] = useState('');
     const [countdown, setCountdown] = useState(3);
     const [isCountdownActive, setIsCountdownActive] = useState(false);
+
     const [gameStarted, setGameStarted] = useState(false);
     const [topTenUsers, setTopTenUsers] = useState([]);
 
@@ -190,7 +195,24 @@ const Game = () => {
     
     return (
         <div className="game">
-            <h1>PolyTick-O Trivia</h1>
+
+
+            <nav>
+              <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+              </ul>
+            </nav>
+
+
+            <header style={{ display: 'flex', justifyContent: 'space-between', padding: '10px' }}>
+                <h2>{user ? user.displayName : 'Guest'}</h2>
+                <div>
+                    <span>Score: {score}</span>
+                    <span> | Time Left: {timeRemaining === Infinity ? 'No timer' : `${timeRemaining}s`}</span>
+                </div>
+            </header>
+
             {!gameMode ? (
                 <div>
                     <h2>Select Game Mode:</h2>

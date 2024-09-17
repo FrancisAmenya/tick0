@@ -1,11 +1,16 @@
 /* styles.css */
 /* Base Styles - Setting up the body and global font */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Raleway:wght@400&display=swap');
+
 body {
-  font-family: 'Arial', sans-serif; /* Use a clean, modern font */
+  font-family: 'Lato', sans-serif; /* Use a clean, modern font */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
-  background-color: #f4f4f4; /* Light background color for contrast */
   color: #333; /* Dark text color for readability */
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1); /* Light shadow for legibility */
+  background-color: rgba(255, 255, 255, 0.6); /* White with 80% opacity */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
 }
 
 /* Container Styles - For consistent padding and centering */
@@ -19,7 +24,7 @@ body {
 header {
   background-color: var(--primary-color); /* Use primary color for header */
   padding: 10px 20px; /* Add padding for space */
-  color: white; /* White text for contrast */
+  color: #333; /* Dark text for contrast */
 }
 
 nav ul {
@@ -33,7 +38,7 @@ nav li {
 }
 
 nav a {
-  color: white; /* White links */
+  color: black; /* White links */
   text-decoration: none; /* Remove underline */
   font-weight: bold; /* Bold text for emphasis */
 }
@@ -72,7 +77,7 @@ input {
 
 /* Main Content Styles - Consistent spacing for main content */
 main {
-  padding: 20px; /* Add padding to main content */
+  /*  padding: 20px;  Add padding to main content */ 
   background-color: white; /* White background for contrast */
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -114,4 +119,13 @@ p {
     z-index: 1; /* Ensure content appears above the background */
     position: relative; /* Position relative to the background */
     /* Additional styles for your App component */
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif; /* Header and title font */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Light shadow for legibility */
+}
+
+.game {
+    text-shadow: 0.5px 0.5px 1px rgba(255, 255, 255, 0.5); /* Shadow for game text */
 }

@@ -1,12 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-//import './LandingPage.css'; // We'll create this CSS file next
 import '../styles.css';
-import coverImage from './cover.jpg'; // Import the image
 
 const LandingPage = () => {
   return (
-    <div className="landing-page" style={{backgroundImage: `url(${coverImage})`}}>
+    <div className="game">
       <header>
         <nav>
           <ul>
