@@ -16,8 +16,8 @@ const LandingPage = () => {
       </header>
       <main>
         <div className="content">
-          <h1>William Ruto Trivia</h1>
-          <p>Test your knowledge about Kenya's President</p>
+          <h1>PolyTick0 Trivia</h1>
+          <p>Do you really know your President?</p>
           <Link to="/game" className="cta-button">Start Game</Link>
         </div>
       </main>
