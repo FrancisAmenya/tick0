@@ -5,7 +5,6 @@ import GoogleLogin from './GoogleLogin'; // Import GoogleLogin
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import '../styles.css';  // Add this line
 //import './LandingPage.css';
-import './Button';
 
 const Signup = () => {
   const [email, setEmail] = useState('');
